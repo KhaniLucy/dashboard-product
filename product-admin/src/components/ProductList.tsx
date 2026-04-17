@@ -1,15 +1,6 @@
 import { useState, useEffect } from "react"
+import type { Product, ProductResponse } from "../types/product"
 
-type Product = {
-  id: number
-  title: string
-  price: number
-  category: string
-}
-
-type ProductResponse = {
-  products: Product[]
-}
 
 export default function ProductList() {
   const [products, setProducts] = useState<Product[]>([])
